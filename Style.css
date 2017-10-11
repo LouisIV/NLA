@@ -1,0 +1,83 @@
+// Colors
+$black: #000000;
+$dark-gray: rgba($black, 0.8);
+$gray: rgba($black, 0.6);
+$light-gray: rgba($black, 0.4);
+$lighter-gray: rgba($black, 0.2);
+$white: #FFFFFF;
+$accent: #4285F4;
+$primary: #2F313A;
+$secondary: #F4B142;
+
+$body-font: "Roboto";
+$regular: 400;
+
+$base-font-family: $body-font, sans-serif;
+$base-font-size: 14px;
+$base-font-weight: $regular;
+$base-line-height: 1.6em;
+
+$max-width : 300px;
+
+#Container{
+  position: relative;
+  width: $max-width;
+  margin: 100px auto 5px;
+  overflow: hidden;
+}
+
+#input-bar{
+  height  : 30px;
+}
+
+button{
+
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: $accent;
+  color: $white;
+  
+  height  : 100%;
+  width   : 20%;
+  outline : none;
+  border  : solid $accent;
+  border-radius: 2px;
+  float   : right;
+  position: absolute;
+  padding : 0px 0px 0px;
+}
+
+button:hover{
+  transition: 0.4s ease;
+  background: none;
+  color: $accent;
+}
+
+button:click {
+  transition: 0.3s ease;
+  background-color: $accent;
+  color: $white;
+}
+
+input {
+  position: relative;
+  padding : 0px;
+  margin  : 0px;
+  height  : 100%;
+  width   : 78%;
+  float   : left;
+  
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  border        : none;
+  border-radius : 2px;
+  color: $dark-gray;
+}
